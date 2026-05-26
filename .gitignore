@@ -1,0 +1,32 @@
+#-- NODE MODULES & BUILD (IMPORTANTE) --
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+#-- LOGS & DIAGNÓSTICOS --
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+coverage/
+.clinic/
+
+#-- DADOS SENSÍVEIS (Segurança e Economia) --
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+certs/
+
+#-- CONFIGURAÇÕES DE IDE E SO --
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+#-- SQL & DUMP (Evite subir bancos de dados inteiros para o contexto) --
+*.sql
+supabase/.temp/
